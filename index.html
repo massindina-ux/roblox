@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblox 2.505.148</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="logo">R</span>
+          <div>
+            <h1>Roblox 2.505.148</h1>
+            <p>Home • Discover • Avatar • Chat • More</p>
+          </div>
+        </div>
+        <div class="profile">
+          <div class="status">
+            <span class="dot"></span>
+            Online
+          </div>
+          <button class="btn secondary">Robux: 1.250</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <aside class="sidebar">
+          <nav>
+            <button class="nav-item active" data-tab="home">Home</button>
+            <button class="nav-item" data-tab="discover">Discover</button>
+            <button class="nav-item" data-tab="avatar">Avatar</button>
+            <button class="nav-item" data-tab="chat">Chat</button>
+            <button class="nav-item" data-tab="more">More</button>
+          </nav>
+          <section class="friends">
+            <h3>Vrienden</h3>
+            <div class="friend">Sofie • speelt nu</div>
+            <div class="friend">Jayden • online</div>
+            <div class="friend">Luca • in lobby</div>
+            <div class="friend">Mila • offline</div>
+          </section>
+        </aside>
+
+        <section class="panel">
+          <div class="tab active" id="home">
+            <div class="hero">
+              <div>
+                <h2>Welkom terug!</h2>
+                <p>Ga direct verder waar je gebleven was en start je spel.</p>
+                <div class="hero-actions">
+                  <button class="btn primary" id="launch-game">Start spel</button>
+                  <button class="btn ghost">Bekijk badges</button>
+                </div>
+              </div>
+              <div class="hero-card">
+                <h4>Update 2.505.148</h4>
+                <ul>
+                  <li>Nieuwe home layout</li>
+                  <li>Snellere game loading</li>
+                  <li>Avatar preview verbeterd</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="game-section">
+              <div class="game-header">
+                <h3>Spel lading</h3>
+                <span id="game-status">Klaar om te starten</span>
+              </div>
+              <div class="game-card">
+                <div class="game-info">
+                  <h4>Sky Runner</h4>
+                  <p>Pak zoveel mogelijk sterren voordat de tijd op is.</p>
+                  <div class="stats">
+                    <span>⭐ 4.8</span>
+                    <span>👥 12.4k</span>
+                    <span>⏱️ 2 min</span>
+                  </div>
+                </div>
+                <div class="game-preview" id="game-preview">
+                  <div class="preview-overlay">
+                    <p>Druk op “Start spel” om te laden</p>
+                  </div>
+                </div>
+              </div>
+              <div class="game-play hidden" id="game-play">
+                <div class="play-header">
+                  <h4>Sky Runner - In game</h4>
+                  <div class="scoreboard">
+                    <span>Score: <strong id="score">0</strong></span>
+                    <span>Tijd: <strong id="time">60</strong>s</span>
+                  </div>
+                </div>
+                <div class="play-area" id="play-area">
+                  <button class="star" id="star">⭐</button>
+                </div>
+                <p class="hint">Klik op de ster om punten te verzamelen!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab" id="discover">
+            <h2>Discover</h2>
+            <div class="grid">
+              <div class="tile">Obby Mega Tower</div>
+              <div class="tile">Pet World 2</div>
+              <div class="tile">Racing Legends</div>
+              <div class="tile">City Roleplay</div>
+            </div>
+          </div>
+
+          <div class="tab" id="avatar">
+            <h2>Avatar</h2>
+            <div class="avatar-card">
+              <div class="avatar-preview">🧑‍🚀</div>
+              <div>
+                <p>Outfit: Space Explorer</p>
+                <button class="btn primary">Aanpassen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab" id="chat">
+            <h2>Chat</h2>
+            <div class="chat-box">
+              <div class="message">Sofie: Kom je naar Sky Runner?</div>
+              <div class="message me">Jij: Ja, ik start nu!</div>
+              <div class="message">Jayden: Nice, invite me.</div>
+            </div>
+            <input class="chat-input" placeholder="Typ een bericht..." />
+          </div>
+
+          <div class="tab" id="more">
+            <h2>More</h2>
+            <ul class="more-list">
+              <li>Instellingen</li>
+              <li>Ouderlijk toezicht</li>
+              <li>Support</li>
+              <li>Uitloggen</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="modal hidden" id="loading-modal">
+      <div class="modal-content">
+        <div class="loader"></div>
+        <h3>Spel aan het laden...</h3>
+        <p>Maak je klaar om te spelen.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
